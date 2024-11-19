@@ -1,0 +1,23 @@
+{
+  "name": "eftybv/efty-pay-php-quickstart",
+  "description": "Efty Pay PHP Quickstart",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Patrick Kosterman",
+      "email": "patrick@efty.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/eftybv/efty-pay-php-sdk"
+    }
+  ],
+  "require": {
+    "eftybv/efty-pay-php-sdk": "v1.0.4",
+    "firebase/php-jwt": "dev-main"
+  },
+  "minimum-stability": "dev"
+}
