@@ -3,17 +3,21 @@ The Efty Pay Quickstart guides &amp; examples for using the Efty Pay PHP SDK.
 
 ## Table of Contents
 
+- [Efty Pay PHP Quickstart](#efty-pay-php-quickstart)
 - [Requirements](#requirements)
-- [Getting started](#getting-started)
-    - [Composer](#composer)
-    - [gRPC](#grpc)
-    - [Include the SDK](#include-the-sdk)
-    - [Install the dependencies](#install-the-dependencies)
-    - [Auto loading](#auto-loading)
-    - [Authentication](#authentication)
-    - [Quickstarts](#quickstarts)
-    - [Troubleshooting](#troubleshooting)
-- [API resource documentation](#api-resource-documentation)
+- [Required Setup](#required-setup)
+  - [Initial Setup & Token Creation](#initial-setup--token-creation)
+  - [Token Creation](#token-creation)
+  - [Set Your API Credentials in Environment Variables](#set-your-api-credentials-in-environment-variables)
+  - [Important Notes](#important-notes)
+- [Create & Onboard the Seller](#create--onboard-the-seller)
+  - [Onboard a Seller](#onboard-a-seller)
+  - [Full Examples](#full-examples)
+- [Examples](#examples)
+  - [Generate Magic Link](#generate-magic-link)
+  - [Create Transaction (with Known Seller & Buyer)](#create-transaction-with-known-seller--buyer)
+  - [Get a user](#get-a-user)
+  - [List transactions](#list-transactions)
 - [License](#license)
 
 ## Requirements
@@ -21,6 +25,10 @@ The Efty Pay Quickstart guides &amp; examples for using the Efty Pay PHP SDK.
 - PECL
 - Composer
 - Efty Pay API access credentials; please contact [ask@efty.com](ask@efty.com) to obtain early access.
+
+## Other resources
+- [Efty Pay PHP SDK](https://github.com/eftybv/efty-pay-php-sdk)
+- [Efty Pay API Resource Documentation](https://docs.eftypay.com)
 
 ## Required Setup
 
@@ -218,7 +226,7 @@ Full examples:
 - Onboard natural-person seller (individual): [examples/create-transaction-new-seller-and-buyer.php](./examples/create-individual-seller-user-and-intiate-onboarding-with-mangopay.php).
 - Onboard legal-user seller (company): [examples/create-transaction-new-seller-and-buyer.php](./examples/create-legal-seller-user-and-intiate-onboarding-with-mangopay.php).
 
-## Examples
+## Other examples
 
 ### Generate magic link 
 The `GenerateMagicLink` method can be used to generate a magic link for the user to their Efty Pay environment. Here they can see their onboarding & transaction information.
@@ -450,7 +458,7 @@ try {
 Full examples:
 - Get user: [examples/get-user.php](./examples/get-user.php).
 
-### Listing transactions
+### List transactions
 You can list all transactions in your account, or you can list transactions with filter criteria. The below sample lists all transactions for a seller.
 
 ```php
@@ -520,3 +528,6 @@ try {
 Full examples:
 - List transactions for seller: [examples/list-transactions-for-seller.php](./examples/list-transactions-for-seller.php).
 - List transactions for buyer: [examples/list-transactions-for-buyer.php](./examples/list-transactions-for-buyer.php).
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
