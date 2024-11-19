@@ -52,9 +52,7 @@ The code relies on the [firebase/php-jwt](https://github.com/firebase/php-jwt) p
 ```
 
 #### Set your API credentials in your environment variables
-You can simply run all the individual samples in the [examples](examples) folder. 
-
-Simply add your API credentials to your environment:
+You can run all the individual samples in the [examples](examples) folder, by simply adding your API credentials to your environment:
 
 ```
 export EFTY_PAY_API_KEY={{YOUR_API_KEY}}
@@ -97,7 +95,6 @@ include_once("helpers.php");
 
 use Google\Protobuf\Timestamp;
 
-// Creates a buyer-or-seller user and dumps the user object.
 try {
     // Get the API URL.
     $apiUrl = getenv("EFTY_PAY_API_URL");
@@ -223,8 +220,8 @@ try {
 ```
 
 Full examples:
-- Onboard natural-person seller (individual): [examples/create-transaction-new-seller-and-buyer.php](./examples/create-individual-seller-user-and-intiate-onboarding-with-mangopay.php).
-- Onboard legal-user seller (company): [examples/create-transaction-new-seller-and-buyer.php](./examples/create-legal-seller-user-and-intiate-onboarding-with-mangopay.php).
+- Onboard natural-person seller (individual): [examples/create-individual-seller-user-and-intiate-onboarding-with-mangopay](./examples/create-individual-seller-user-and-intiate-onboarding-with-mangopay.php).
+- Onboard legal-user seller (company): [examples/create-legal-seller-user-and-intiate-onboarding-with-mangopay.php](./examples/create-legal-seller-user-and-intiate-onboarding-with-mangopay.php).
 
 ## Other examples
 
@@ -238,7 +235,6 @@ The magic links use the Efty Pay OTP process & technology for secure access.
 include_once("../vendor/autoload.php");
 include_once("helpers.php");
 
-// Creates a buyer-or-seller user and dumps the user object.
 try {
     // Get the API URL.
     $apiUrl = getenv("EFTY_PAY_API_URL");
@@ -285,12 +281,11 @@ Notes:
 - If a user already exists, creating a transaction will throw an error, instead you should pass in the user ID of the existing user. 
 - To get the user details (including the ID) for an email or username, you can use the [Get User method](examples/get-user.php).
 
-```
+```php
 <?php
 include_once("../vendor/autoload.php");
 include_once("helpers.php");
 
-// Creates a transaction and dumps the transaction object.
 try {
     // Get the API URL.
     $apiUrl = getenv("EFTY_PAY_API_URL");
@@ -396,7 +391,6 @@ You can get a user by ID, email, or username. Below sample shows getting the use
 include_once("../vendor/autoload.php");
 include_once("helpers.php");
 
-// Creates a buyer-or-seller user and dumps the user object.
 try {
     // Get the API URL.
     $apiUrl = getenv("EFTY_PAY_API_URL");
@@ -466,7 +460,6 @@ You can list all transactions in your account, or you can list transactions with
 include_once("../vendor/autoload.php");
 include_once("helpers.php");
 
-// Creates a buyer-or-seller user and dumps the user object.
 try {
     // Get the API URL.
     $apiUrl = getenv("EFTY_PAY_API_URL");
