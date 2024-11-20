@@ -46,7 +46,7 @@ In order to authenticate with Efty Pay, a JWT token needs to be passed into the 
 The code relies on the [firebase/php-jwt](https://github.com/firebase/php-jwt) package to do the JWT token generation in PHP. Please make sure to include this library into your `composer.json` if you want to use the [examples/helpers.php](examples/helpers.php) code:
 ```
 "require": {
-  "eftybv/efty-pay-php-sdk": "v1.0.4",
+  "eftybv/efty-pay-php-sdk": "v1.0.5",
   "firebase/php-jwt": "dev-main"
 }
 ```
