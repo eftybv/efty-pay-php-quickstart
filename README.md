@@ -18,13 +18,14 @@ The Efty Pay Quickstart guides &amp; examples for using the Efty Pay PHP SDK.
   - [Create Transaction (with Known Seller & Buyer)](#create-transaction-with-known-seller--buyer)
   - [Get a user](#get-a-user)
   - [List transactions](#list-transactions)
+- [Troubleshooting](#troubleshooting-support)
 - [License](#license)
 
 ## Requirements
 - PHP 7.0 or higher
 - PECL
 - Composer
-- Efty Pay API access credentials; please contact [ask@efty.com](ask@efty.com) to obtain early access.
+- Efty Pay API access credentials; please fill out the [access request form](https://forms.gle/fk85K45eThgepi1Q8) to obtain early access.
 
 ## Other resources
 - [Efty Pay PHP SDK](https://github.com/eftybv/efty-pay-php-sdk)
@@ -521,6 +522,9 @@ try {
 Full examples:
 - List transactions for seller: [examples/list-transactions-for-seller.php](./examples/list-transactions-for-seller.php).
 - List transactions for buyer: [examples/list-transactions-for-buyer.php](./examples/list-transactions-for-buyer.php).
+
+## Troubleshooting & Support
+If you run into any other issues, contact us at [api@efty.com](api@efty.com).
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.

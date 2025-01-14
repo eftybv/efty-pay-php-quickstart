@@ -16,7 +16,7 @@
     }
   ],
   "require": {
-    "eftybv/efty-pay-php-sdk": "v1.0.5",
+    "eftybv/efty-pay-php-sdk": "v1.0.6",
     "firebase/php-jwt": "dev-main"
   },
   "minimum-stability": "dev"
